@@ -1,0 +1,135 @@
+/* vars */
+:root {
+    --main_color: red;
+    --page_background_col: rgb(153, 85, 85);
+    --navBar_background_col: rgb(85, 5, 5);
+    --navBar_height: 100px;
+    --navBar_bottom_margin: 5px;
+    --title_font: "Impact, fantasy";
+    --main-font: "Times New Roman";
+}
+
+
+body {
+    background-color: var(--page_background_col);
+}
+
+
+/*#region ----------- NAV ----------- */
+
+#navSection {
+    display: flex;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: var(--navBar_height);
+    background-color: var(--navBar_background_col);
+    align-items: center;
+    padding: 0%;
+}
+
+#navLogo {
+    margin-left: 5px;
+}
+
+#navLinkListContainer {
+    display: inline-block;
+}
+
+#navLinkList {
+    margin-left: 10px;
+    float: left;
+    display: inline;
+    height: 100%;
+}
+
+.navLink {
+    display: inline;
+    margin-left: 10px;
+}
+
+/*#endregion */
+
+/*#region ---------------- HOME ------------*/
+
+#homeSection {
+    padding-top: calc(var(--navBar_height) + var(--navBar_bottom_margin));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+#resturantName {
+    font-family: var(--title_font);
+    font-size:     4.5em;
+    margin-top:    50px;
+    margin-bottom: 50px;
+}
+
+.homeImg {
+    margin-left:  20px;
+    margin-right: 20px;
+}
+
+/* #homeCaptionContainer {
+    
+} */
+
+.homeCaption {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+#homeCaptionHeader {
+    font-size: 2em;
+    font-family: var(--main-font);
+}
+
+
+/* #homeCaptionParagraph {
+
+} */
+
+/*#endregion */
+
+/*#region -------------- PROCESS --------------*/
+
+#processSection {
+    padding-top: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4px
+
+}
+
+#processTextContainer {
+    width: 50%;
+    vertical-align: top;
+    /* margin-right: 100px; */
+}
+
+/* .processSectionImg {
+    margin-left: 100px;
+} */
+
+.processSectionImgContainer {
+    width: 50%;
+    /* margin-left: 100px; */
+}
+
+
+
+/*#endregion*/
+
+
+
+
+
